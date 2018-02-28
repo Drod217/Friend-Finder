@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/css/style.css" >
+
+    <!-- jQuery Link -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <title>Friend Finder</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/survey">Start Survey</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Friend Finder</h1>
+            <p> Survey Questions</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <h3>
+            <strong>About You</strong>
+        </h3>
+
+        <hr>
+
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control valid" required="">
+
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control valid" required="">
+
+        <hr>
+
+        <h4>Question 1</h4>
+        <div class="form-group">
+            <label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
+            <select class="form-control valid" id="question1">
+                <!--each option contains a value except the default blank choice-->
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 2</h4>
+        <div class="form-group">
+            <label for="question2">Generally speaking, you rely more on your experience than your imagination.</label>
+            <select class="form-control valid" id="question2">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 3</h4>
+        <div class="form-group">
+            <label for="question3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+            <select class="form-control valid" id="question3">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 4</h4>
+        <div class="form-group">
+            <label for="question4">You rarely do something just out of sheer curiosity.</label>
+            <select class="form-control valid" id="question4">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 5</h4>
+        <div class="form-group">
+            <label for="question5">People can rarely upset you.</label>
+            <select class="form-control valid" id="question5">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 6</h4>
+        <div class="form-group">
+            <label for="question6">It is often difficult for you to relate to other people’s feelings.</label>
+            <select class="form-control valid" id="question6">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 7</h4>
+        <div class="form-group">
+            <label for="question7">In a discussion, truth should be more important than people’s sensitivities.</label>
+            <select class="form-control valid" id="question7">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 8</h4>
+        <div class="form-group">
+            <label for="question8">You rarely get carried away by fantasies and ideas.</label>
+            <select class="form-control valid" id="question8">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 9</h4>
+        <div class="form-group">
+            <label for="question9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+            </label>
+            <select class="form-control valid" id="question9">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h4>Question 10</h4>
+        <div class="form-group">
+            <label for="question10">You feel more energetic after spending time with a group of people.</label>
+            <select class="form-control valid" id="question10">
+                <option value="" selected disabled>Select an Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friend">API Friends List</a> |
+                    <a href="https://github.com/Drod217/Friend-Finder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Meet your match!</h4>
+                </div>
+                <div class="modal-body" id="friendName">
+                </div>
+                <img id="friendPic" src="" alt="Image Unavailable" width = 300px>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+        function checkForm() {
+            var formFilled = true;
+            $(".valid").each(function () {
+                if ($(this).val() === '') {
+                    formFilled = false;
+                }
+            });
+            return formFilled;
+        }
+        if (checkForm() === true) {
+            // Here we grab the form elements
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                    $("#question6").val(),
+                    $("#question7").val(),
+                    $("#question8").val(),
+                    $("#question9").val(),
+                    $("#question10").val()
+                ]
+            };
+            //console.log(newFriend);
+            // This line is the magic. It"s very similar to the standard ajax function we used.
+            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+            // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+            // depending on if a tables is available or not.
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", newFriend,
+                function (data) {
+                    console.log(data.photo)
+                    $("#friendName").text(data.name);
+                    $("#friendPic").attr("src", data.photo)
+                    console.log($("#friendPic").attr("src", data.photo))
+                });
+            $('#myModal').modal();
+            // Clear the form when submitting
+            $("#name").val("");
+            $("#photo").val("");
+            $("#question1").val("");
+            $("#question2").val("");
+            $("#question3").val("");
+            $("#question4").val("");
+            $("#question5").val("");
+            $("#question6").val("");
+            $("#question7").val("");
+            $("#question8").val("");
+            $("#question9").val("");
+            $("#question10").val("");
+        } else {
+            alert("You are missing something! Go through the form again!");
+            $('#myModal').modal('hide');
+        };
+    });
+</script>
