@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Latest compiled and minified CSS -->
+   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
-    <!-- CSS Link -->
+  
     <link rel="stylesheet" href="/css/style.css" >
 
-    <!-- jQuery Link -->
+  
     <script src="https://code.jquery.com/jquery.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-    <!-- Font Awesome Link -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <title>Friend Finder</title>
@@ -72,7 +72,7 @@
         <div class="form-group">
             <label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
             <select class="form-control valid" id="question1">
-                <!--each option contains a value except the default blank choice-->
+                
                 <option value="" selected disabled>Select an Answer</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -200,7 +200,7 @@
             </select>
         </div>
 
-        <!-- Submit Button -->
+       
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
             <i class="fa fa-check-circle" aria-hidden="true"></i>
             Submit</button>
@@ -217,7 +217,7 @@
 
     </div>
 
-    <!-- Modal -->
+   
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -243,10 +243,7 @@
 </html>
 
 <script type="text/javascript">
-    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    
     $("#submit").on("click", function (event) {
         event.preventDefault();
         function checkForm() {
@@ -259,7 +256,7 @@
             return formFilled;
         }
         if (checkForm() === true) {
-            // Here we grab the form elements
+           
             var newFriend = {
                 name: $("#name").val().trim(),
                 photo: $("#photo").val().trim(),
@@ -276,11 +273,7 @@
                     $("#question10").val()
                 ]
             };
-            //console.log(newFriend);
-            // This line is the magic. It"s very similar to the standard ajax function we used.
-            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-            // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-            // depending on if a tables is available or not.
+            
             var currentURL = window.location.origin;
             $.post(currentURL + "/api/friends", newFriend,
                 function (data) {
@@ -290,7 +283,7 @@
                     console.log($("#friendPic").attr("src", data.photo))
                 });
             $('#myModal').modal();
-            // Clear the form when submitting
+            
             $("#name").val("");
             $("#photo").val("");
             $("#question1").val("");

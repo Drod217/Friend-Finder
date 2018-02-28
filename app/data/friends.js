@@ -21,7 +21,7 @@ var friendsArray = [{
   },
 {
     "name": "Seinfeld",
-    "photo": "https://en.wikipedia.org/wiki/Jerry_Seinfeld#/media/File:Jerry_Seinfeld_(1997).jpg",
+    "photo": "http://i49.tinypic.com/2ntlel2.jpg",
     "scores": [
         1,
         1,
@@ -37,7 +37,7 @@ var friendsArray = [{
 },
 {
     "name": "Betty",
-    "photo": "https://en.wikipedia.org/wiki/Betty_White#/media/File:Betty_White_2010.jpg",
+    "photo": "http://i44.tinypic.com/sgriiu.jpg",
     "scores": [
         2,
         3,
@@ -69,7 +69,7 @@ var friendsArray = [{
 },
 {
     "name": "Whoopie",
-    "photo": "https://en.wikipedia.org/wiki/Whoopi_Goldberg#/media/File:Whoopi_Goldberg_at_a_NYC_No_on_Proposition_8_Rally.jpg",
+    "photo": "http://i41.tinypic.com/jsge9k.jpg",
     "scores": [
         2,
         5,
@@ -85,7 +85,7 @@ var friendsArray = [{
 },
 {
     "name": "Michael Jordan",
-    "photo": "https://en.wikipedia.org/wiki/Michael_Jordan#/media/File:Michael_Jordan_in_2014.jpg",
+    "photo": "http://i45.tinypic.com/sdih5x.jpg",
     "scores": [
         4,
         5,
@@ -101,7 +101,7 @@ var friendsArray = [{
 },
 {
     "name": "Bill Gates",
-    "photo": "https://en.wikipedia.org/wiki/Bill_Gates#/media/File:Bill_Gates_June_2015.jpg",
+    "photo": "http://i39.tinypic.com/2ivbeoh.jpg",
     "scores": [
         1,
         1,
@@ -117,23 +117,23 @@ var friendsArray = [{
 },
 {
     "name": "Hilary Clinton",
-    "photo": "https://en.wikipedia.org/wiki/File:Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg",
+    "photo": "http://i58.tinypic.com/bgco0p.jpg",
     "scores": [
-        2,
-        5,
-        1,
-        4,
         3,
-        4,
-        1,
-        2,
-        4,
-        4
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
     ]
 },
 {
     "name": "Donald Trump",
-    "photo": "https://en.wikipedia.org/wiki/Donald_Trump#/media/File:Official_Portrait_of_President_Donald_Trump.jpg",
+    "photo": "http://i42.tinypic.com/2yvsyn4.jpg",
     "scores": [
         2,
         5,
